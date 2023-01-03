@@ -5,9 +5,10 @@ spring:
   datasource:
     druid:
       driver-class-name: com.mysql.cj.jdbc.Driver
-      username: root
-      password: root
-      url: jdbc:mysql:///springboot
+      username: name # 你的数据库用户名
+      password: passwd # 你的数据库密码
+      # ...替换为你的服务器IP
+      url: jdbc:mysql://.../springboot?useUnicode=true&characterEncoding=utf-8&allowMultiQueries=true&useSSL=false&serverTimezone=UTC
 
 mybatis-plus:
   global-config:
